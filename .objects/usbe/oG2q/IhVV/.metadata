@@ -1,0 +1,13 @@
+﻿{
+  "Id": "IhVVRsCsf0WcR2bpqo0hyA",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA",
+  "ParentRef": "Ehr2O60_-UmY1Bii3HoOPA/oG2qExKHXUSW7Mf-PurZDQ",
+  "Name": "DS4(1)/110 輸入供應商發票: 表頭資料",
+  "Type": "Screen",
+  "Created": "2022-01-25T18:14:12.9714964Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-25T18:14:12.9714964Z"
+}

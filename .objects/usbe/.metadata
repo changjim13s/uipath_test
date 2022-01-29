@@ -1,0 +1,12 @@
+﻿{
+  "Id": "usbeMKrfTk2wHXxQucvT3g",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/usbeMKrfTk2wHXxQucvT3g",
+  "Name": "DS4(1)/110 輸入供應商發票: 表頭資料",
+  "Type": "App",
+  "Created": "2022-01-25T18:14:12.9323518Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-25T18:14:12.9323518Z"
+}

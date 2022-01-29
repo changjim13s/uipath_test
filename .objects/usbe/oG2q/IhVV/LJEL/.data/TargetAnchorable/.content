@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable ContentHash="KvElLXIMmkS0tJ-PWI-7Hg" DesignTimeRectangle="352, 150, 23, 21" ElementType="InputBox" FriendlyName="'KR'" FullSelectorArgument="&lt;sap id='usr/ctxt[1]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxt[1]' /&gt;" Guid="b35b95d8-8a3c-4c7e-9c98-c4756727974e" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入供應商發票: 表頭資料' /&gt;" SearchSteps="Selector" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0W5o3SKNKD0Kxycs9X55IUw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="3bd5b7f95183b2304024951e2eaf9e65.png" xmlns="">0aZ7Vg8L3o0yztM0XP9xXnw</imageRef>
+</TargetAnchorable>

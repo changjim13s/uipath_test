@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetApp Area="0, 0, 0, 0" ContentHash="LVwqwjbJCUqPtznIxdEw8g" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入供應商發票: 表頭資料'/&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0-RvCYUdWMU23KmYsnzFbsw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="07c8554740a2cd5a7f7432376eadd145.png" xmlns="">0Izc3Kv5540KAlyuhUovo5A</imageRef>
+</TargetApp>

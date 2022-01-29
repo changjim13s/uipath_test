@@ -1,0 +1,14 @@
+﻿{
+  "Id": "vD_2u_8Gek2sTeajFq6j1g",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/vD_2u_8Gek2sTeajFq6j1g",
+  "ParentRef": "Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA",
+  "Name": "TextField 文件表頭內文",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-01-25T18:14:46.8058768Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-25T18:14:46.8058768Z"
+}

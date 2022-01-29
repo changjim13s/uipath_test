@@ -1,0 +1,14 @@
+﻿{
+  "Id": "muf54vwO1UyLgUjupbWu6Q",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/muf54vwO1UyLgUjupbWu6Q",
+  "ParentRef": "Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA",
+  "Name": "CTextField 文件日期",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-01-27T16:30:49.2072904Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-27T16:30:49.2072904Z"
+}

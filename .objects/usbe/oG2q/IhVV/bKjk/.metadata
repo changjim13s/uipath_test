@@ -1,0 +1,14 @@
+﻿{
+  "Id": "bKjk9K62N0eVxU2EZE2T1w",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/bKjk9K62N0eVxU2EZE2T1w",
+  "ParentRef": "Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA",
+  "Name": "TextField 參考",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-01-25T18:14:24.3415456Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-25T18:14:24.3415456Z"
+}

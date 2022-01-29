@@ -1,0 +1,14 @@
+﻿{
+  "Id": "8BUWoV0wsUy-VUFUZXZpNw",
+  "Reference": "Ehr2O60_-UmY1Bii3HoOPA/8BUWoV0wsUy-VUFUZXZpNw",
+  "ParentRef": "Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA",
+  "Name": "CTextField 科目",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-01-25T18:15:09.2336026Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-25T18:15:09.2336026Z"
+}

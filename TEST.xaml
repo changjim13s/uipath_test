@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TEST" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1083,701" sap2010:WorkflowViewState.IdRef="TEST_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="test" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1083,4852" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="64">
+    <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -19,9 +19,9 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>System.Xml</x:String>
       <x:String>System.Xml.Linq</x:String>
-      <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
@@ -33,12 +33,12 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>System.ComponentModel</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Runtime.InteropServices</x:String>
-    </scg:List>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -59,9 +59,9 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
-      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
@@ -70,57 +70,117 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
-    </scg:List>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="TEST" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="476,4787" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,119.76</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart.StartNode>
-      <x:Reference>__ReferenceID0</x:Reference>
-    </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID0">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">100,86.76</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap:VirtualizedContainerService.HintSize="476,610" sap2010:WorkflowViewState.IdRef="Sequence_4">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="ui:UiElement" Name="SAPS" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="DS4(1)/110 輸入供應商發票: 表頭資料" sap:VirtualizedContainerService.HintSize="434,518" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OutUiElement="[SAPS]" ScopeGuid="c4311dfa-f28c-44d2-9cac-a6d267ce4367" Version="V1">
-          <uix:NApplicationCard.Body>
-            <ActivityAction x:TypeArguments="x:Object">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-              </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NClick ClickType="Double" DisplayName="Click" sap:VirtualizedContainerService.HintSize="334,136" sap2010:WorkflowViewState.IdRef="NClick_2" InUiElement="[SAPS]" KeyModifiers="None" MouseButton="Left" Version="V1" />
-              </Sequence>
-            </ActivityAction>
-          </uix:NApplicationCard.Body>
-          <uix:NApplicationCard.TargetApp>
-            <uix:TargetApp Area="0, 0, 0, 0" ContentHash="LVwqwjbJCUqPtznIxdEw8g" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVFhHY/j//z/jQOJRB4w6YNQBA+8Ap5rV7E7Vqw8OCK5ZU8jgVL2GE8j4PwB4rXPtGsGBcgDIcmFIFNDfAXDLwQ44dOqipWP16v+O1auohFcDLQFhwpaDHfD20/fP9198/E8NvPf8vf9+DTBHELYc7ID3X37+pwY+e/Pxf7+K2f/tShdhcwBWy6nmgAu3n/73Lp3x37Z4AbYoWA+0XBCb5SBMsQPOAy33LJ72365kITafr3epW4vTchCmyAEgn3uWTIdavgrZ4r/EWA7CDA+evy1tW7Lvf8uiXSTi3f99yoFxToHlIMxglTuD075i2X/78qUkY4fK5ejBDrbcuQ53nKNjahZEUJ8TbzkIU8sBJPschqnlAKLjHB1TXh3XrJlJruUgPNoiGnXAqANGugP+MwIA+QFnw3tJZtEAAAAASUVORK5CYII=" InformativeScreenshot="07c8554740a2cd5a7f7432376eadd145.png" Reference="Ehr2O60_-UmY1Bii3HoOPA/IhVVRsCsf0WcR2bpqo0hyA" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入供應商發票: 表頭資料'/&gt;" />
-          </uix:NApplicationCard.TargetApp>
-        </uix:NApplicationCard>
-      </Sequence>
-    </FlowStep>
-  </Flowchart>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目" sap:VirtualizedContainerService.HintSize="434,4695" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e99f4ae0-f6f5-4513-9dc1-cb81e92bc9e5" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,4406" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="40" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="25, 275, 23, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,0]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,0]' /&gt;" Guid="6c1f6f22-8b70-4121-b760-de19226a49e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVEhL7dZLSwJRAMXxvv8y6GGZWj5CLZ+N1qbGgtoWaY1ppuZbwUzzuTjdM8mVCIKYK0F04XIWDv8fzMZZaQ2G4F1NXaPwMljq/R0smUxic8uGtfUNZZc9dglxJeZwuqCfX+ImnUXmPmf5spO6uILd7jAx9iVms+/gNpNFrd5Cr9e3fNlJ3xlmlxhXYtsOJ4yHAvr9N8xmM8uXHfbYJcb99BrzhSJGowlUHHbYY/fLa3Ts7iH3WMJ4PJ0/bu2wwx67JiZWYi63ZykYu8S4EnN7PcgXy0ox9tglxpWYd9+HQrGiFGPP7AqMKzGfP4CnUlUpxh67xLj/2I/Pt5g/EES5UlOKsccuMe4COzjEc7WuFGOPXRMTK7FgKCx+bGIymc0ft3bYYY9dYlyJhSJhVOttpRh77BLjSiwSjaHW7GAyVYSJDnvsEuMusPgRGu0OhqPx/HFrh51GS2Cia2JiJaYlE0jfG+iKP77BcGz5dl/7yBhZxBMfnwXsS0zXdWjHJ4glNES1uJLL3ql+ZmLsS+yPfcoN8A7eCtCL4w93/AAAAABJRU5ErkJggg==" InformativeScreenshot="a9a2d4d01a89907ef5d8cefc70628c22.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" Text="61320000" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="49, 275, 127, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,3]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,3]' /&gt;" Guid="9b8020c2-3f5b-4d5d-b4b2-b52a2f394ba4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAZCAYAAAASYJ1DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHDSURBVGhD7ZpJT0JBEIT7/99dUERc0OCCLAJ60acmejaCgCACsrgliA8F5NBS84D0wV/wpiup1FQyt68yp6HqZ5/ValjHoJ6bstmsOSCXVwK8sLiktsTgLflTMBgyJbQeZufymm9zJc4XymqfG5wvrm5Y8qdAcM0U5F2+xO3OG/d6rtrnBufcfdFwn/Gn1dC6KcjiQ5Vd95vH47Ha5wZn8Jb8Cc/D7JmoVGs8GIxY5X+BM3hL/hTa2PTKJMuPdR4Of6fXVX4WOIO35E/hrW1TkDoGezQbg+RPWxGvICu1ho7BEoEzeEv+FNndMcVkraljsETgDN6SP+1E90xBPtVbOgZLBM7gLfnrGCyVjkE1l45BNde/Y4ju7ZuCbDTbOgZLBM7gLflT9ODQK5N8bnV0DJYInMFb8qf92JEpyOfWK49G4+l1lZ8FzuAt+VMs7hVkq/OuY7BE4Azekj/FE0lTkO3XDx796hhsEDiDt+RP8dSxVyb58v7BP4Ph9LrKzwLnl7fJGAR/SmW8b0/pbIZzhSJ3ey73f4Zqn7v75XK+WGLJn86cc1Mcx+H0ySknM2lOpFNqCwzekr/+jlbPrWNQT93nP1qwrGqb2ewMAAAAAElFTkSuQmCC" InformativeScreenshot="25ca4f4608bcb84a7c56b6ad1c319b52.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="200" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="177, 275, 87, 21" ElementType="InputBox" FriendlyName="'TextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/txt[0,19]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/txt[0,19]' /&gt;" Guid="487f615a-dfb9-4d1a-a805-3f4b4fdb9971" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAZCAYAAABeplL+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMiSURBVGhD7dpbTxpRFAXg87Oa9K3/z1RNVVRELCIVcAQR0TRRlNY21hJpRUGQiwgo3rhfNatnHxkCBm3HRp/OSlY2hiOTfJnsCMJOGIPaWL4s+4Jl6gOJ/fJlHo9HPPgf7JHRMdk+1U2MQ/WlyaamDHg/OCSwaT6nAwMDCB5GZLsa2A9j0/cNer1BYBumjWAT+inkq02Bfc2nll6UGlj1H2FweAiFQkm2q5lsDvsHIYxzX8KmyfSGaVSbtwK7cXunqaVGC6t7MQx/GEGr1ZLtaqlUQegohknuS9g0Gd3eteYdMsW65pYbt/AE4hjm+0mmN7VaA9FYQqyPzhqZnvkosNOFWqfJqxLevX3zZOkMYa9x7FGdxH6Yer2JyHESBu4rsPlkM6ZZsQ4SV9VOg6kLAboeDPUtPUdnaG8T9tjEZPsSMmpUbCP3JWyazGQ247rSRDB903PnPlYVezeWwXmxIbB1fPnL9Iawo4kTmMz32DSZ2WJB6qaG7UhGID6VbmzfYQqRi4rA1huN7RMyagg7ljiF2TInsGkyy7wVx1cVfA4mNWHT+f2zovhrxDgjsR+GsOPJNOa4L2HTFNhHuTKWOZoWbDrvT+exGuDYfB/J9EZiv2IexQ5kC1D80X/CVkvnv8av+BqJiuUv05u+2PNWmyZsncsL08ZPOPfiAtvtD2PW8ql9QkYNYZ+cZkC+hE2TWe0LmrDnfL8EtPsgDR/HXtkNwWyV2A9D2Kl0FvPcV2DzyezKIvay+Q7230rn1sLnol/il1je2ecvZGtfQkZNg79RTKXPYeO+hE2TKQ4HAvwNDd2ttB4m3b5Hq64PFXsrmoNzOwCrXWlfQkYNYaezF1Ac99g0mcO5BH8yJz71s+2EMf/98NHS84Tt+p0SXQ+dwu7dgX3R0b6EjJpGs4XM+SXIl7BpMqdrGV7/gcBWtnY1laAXN39gwbHUvoSMmmqtjrMcx+a+AptPtrziwcKSU2AvupyaS7+rKArK1bpsV2+KJQRDYbi4L2G7PStgG16v+IGwaT6nTrdLtk/dq2tY924IIy93lv9df8XK7428Wsv4A6CE5q6R3BAqAAAAAElFTkSuQmCC" InformativeScreenshot="8eaf3d230590f995d3ba8d3481bd7bd4.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="vq" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="265, 275, 23, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,30]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,30]' /&gt;" Guid="a379e6f0-d4b9-4c1c-aaa5-6b347399a9c2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVEhL7dZJTwJBEAXg+v93F5RVGAiLLCKgFxk10bMRBAQRUcCFxAUUkEPZr5keOXAx03Cyk8qbSjrfy1xgqE3Eappvw6UOqYeVlBUKBfmAss0tF6+tb2gbeMpHksfjtcvMkzO+KNW4XKk7HjjHp+fsds98r8/PtOX22GWX5Rp3e8/8/j5wPHBKV1V2WT6S3F6fXVa9bvJg8MnT6dTxwIG3bflIwuup12w0WzwaTVjHgQNv3idfYGe2iKzf3PF4/G1dd3bgwIOrfAoEQ3Lxi1xGGVzlU9Aw5BI0QtxotbWWwYOrfDIiEbkYkTA3Ww9ay+BJ1/IpEo3JJSzy9q6jtQweXOX/l/35LCyLxuJyQbYfulrL4M37FEvszhaR952e1jJ4cJVPiWRKLnGR950nnkym1nVnBw48uMqnZDotl2Q6xZ3ei9YyeHCVT+nMnlzwq9996vPkW1OZcOApH0mZ7L5d9vjS56/R2Lru7MB5fBZllo+k/fzvZ0GpUuVX8cc3/Bo7ntePAZerNc5afq6QZyqapl2WOzjkvXyOM7msloF3ZBalb4qe1X5doUTNogv6Zsg/mSKnLIYxUIgAAAAASUVORK5CYII=" InformativeScreenshot="303e26212e980695f1d3387ee26109b9.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="eqweee" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="289, 275, 87, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,33]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,33]' /&gt;" Guid="4b9173be-7423-4812-a47e-99597b608e5b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAZCAYAAABeplL+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG1SURBVGhD7dm5TwJhEAXw+f97bwQVj+CJIKCNrppobQQBDwTlUCBBXBSQYuR9C8kUdvu51bzkZfYlW/2y3VLpo8faYKrYAZYymYx5wJ1fXOCZ2TmtpcJT+lIoFDYjHFlh5+KKb7JFzuUftD4Lx/PLa5a+tBBaNgP3NlfkeqPJ3a6r9Vk4Zu8KxnXqS0vhiBm4hfsSu+4Xj0Yjrc/CEZ7Sl/B5Tz/zx1KZ+/0ha/wHjvCUvhReXfPG+D48VXgw+Jm8rvETOMJT+tJKdN0MXMW2lym29KXohjdwH8svim0pcISn9KWNrU0zzC1XFdtS4AhP6UubsW0zcJ8rNcW2FDjCU/oq9j9FsQOMYgeYP7Fj2ztm4L5U64ptKXCEp/Sl2O6eN8b3tdZQbEuBIzylL+3sH5iB+1p75+FwNHld4ydwhKf0pf24N3BrjZZiWwoc4Sl9KX6YMAO3/t7m4Y9i2wgc4Sl9KZ488sb4vrXa/N0fTF7X+Akc35pjbOFLybT32yaVSXM2X+BO1+Xe90Drs51Pl3OFIktfOnXOzHAch1PHJ5xIp/gwldRaKDylr/5dD7CKHVh7/AtQsrOp6KWVDAAAAABJRU5ErkJggg==" InformativeScreenshot="78e6a6860f93eb8509a655701276295f.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Text="123333" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="377, 275, 103, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,44]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,44]' /&gt;" Guid="4178a70a-834d-40aa-a49e-4785177be402" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAZCAYAAAA2VdDGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVGhD7drJT8JgEAXw+f/v7ogrGlxZBPSiVRM9G0HBBQEpCJogFgXkMPK+QjIH7/2azEtehpf09ktPhcqfPdaGo4oVolIulzM/cOcXF3hmdk5rSeEhfSgSiZoRXVll5+KKb/IlLtw/agMuHM4vr1n60EJk2Qzc20KJG802d7ueNuDCIX9XNC5TH1qKrpiBW3wos+d982g00gZcOMBD+hBer+lr9lSucL8/ZE3wgQM8pA9F19b9Mb6Pz1UeDH4nj2uCDBzgIX1odWPTDFzFsidTLOlDGzF/4D5VaoplSeAAD+lDse0tM8yt1BXLksABHtKHtuI7ZuC+VF3FsiRwgIf0USxLo1ghimKFKP9ixXd2zcCt1RuKZUngAA/pQ/G9fX+M76vbVCxLAgd4SB/aPTg0A/fVbfFwOJo8rgkycICH9KGDhD9w3ea7YlkSOMBD+lAimTIDt9H64OGvYtkQOMBD+lAifeSP8X17/+Cf/mDyuCbIwOGtPcYSPpTO+p+NM7ks5++L3Ol63PsZaANu58vjQrHE0odOnTMzHMfhzPEJp7IZTmbSWgsKD+mj/24KURUrNO3xH8lDsMOziDaNAAAAAElFTkSuQmCC" InformativeScreenshot="68943db82b67cf538b901de23f8d08e7.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="ass" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="481, 275, 127, 21" ElementType="InputBox" FriendlyName="'TextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/txt[0,57]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/txt[0,57]' /&gt;" Guid="f8ff3247-1764-4ee1-827f-21b3a68a05bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAZCAYAAAASYJ1DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM7SURBVGhD7ZtdTxpBGIXnZzXpXf+fqZr6UUXEKlIRVxAQTBNFaW1jLZFWFBT5EBcURUEQWNCczjsCaRO1XXs16ZzkycEwMhfvw84SkR0zhi6pck3xH8O6D5QMChYIBMSDf5FhaHhEISGjY2/RnT81m5iw4nX/gJCB+jn09fUhtn+okIjobgLr4c+wWKxCBuukDWzMMoFyvSVkuORthvOqgWDkAP2DA6hUqgqJyBeK2N2L4y2fP8lAzSzWSdRbt0IG4/bOFFWjjeBOCoNvhtButxUSUa3eIH6QwjifP8lAzejy0GjdIX/dNE3NuEUgmsYgP39U5EqjYSCZyojjoXdMTE69EzLolUaPbKmKVy9fPAmtIRlWuAzDo0oG2dJstnB4lIWVz1/IwJtNTc+Iy32mVO8Ry52Lga/G4g9Cz9Eaum8gGUbGxjtbqMiSrgw2Pn+SgZpN2+24vGkhpl/99s5/jK4M26k8zq4NIcMov/lQkSskQzJzjGn7vQzUzO5wIHfVwOZhXgz5qfwqQ3g/h8PzGyGDxWbrrFCRJSRDKnMCu2NWyEDNHHNOHJVu8CGWNSUDrd89vRafJmxTSgbZQjKkszpm+fxJBmohw0GxBh8fqhkZaH1ELyMY5TLw80ZFrigZVHp5VIZooQItkvwrGbrQ+k/pEj8mkuLmQ0WuPCjDnHPelAyj3hCm177Bs5MWMvgjCcw43ndWqMgSkuH4JA+aP8lAzZyuBVMyzIa/CxH8ezrCXIbl7TjsTiWDbCEZcnoBc3z+QgbezKUtYqdQ7snwJ2jdSuJM8DF9Ad/WLn+h+c4WKrLEMNpchjPM8/mTDNRMc7sR1a/Eu50u/+P+8KN0j4euDBvJIjybUThdWmcLFVlCMuiFc2juexmomduzhEi2KP5qOb+VwNyX/Ueh50kG74+cYDV+AldoC65Fd2cLFVlitNrIn12A5k8yUDOP14dQZE/IoG1sm4JEWFz/igX3UmcLFVlSbzRxWuQy8PkLGXgz33IAC0seIcOi12Ma+l1N01CrNxUScXVdRSyegJfPn2TwB5bB1kIh8QPJQP0cPH6vQkL8wRWshtbEDEPcA/XtaEUP9X8Tig41/ATnKd9vuiv0cgAAAABJRU5ErkJggg==" InformativeScreenshot="1a81f72af48690bfd72bc86b07d76efa.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_8" Text="1000" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="609, 275, 39, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,73]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[0,73]' /&gt;" Guid="d1db8ce3-a031-4f07-b221-c930953a137e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAZCAYAAACo79dmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGnSURBVFhH7dhJT8JQEAfwfv+7C8oqlIZFKLtepGqiZyNIEazse4IIQguHsTP0Pb6ASR+Jk/wz/8McfsfXSh1JAhbjayV0JFaOAlsqlagg9vzCAyenZ8IEPcxHWJ/Pz7HawxO8VOpQrTVcDzruH5/B6937CHvh9XHsa7UOg+EEFoul60FH5U0Hj+MjrNcf4Fj93YDl8gd2u53rQQd6Lh0fYf2BIBXcTaMFm40FIgw60MN8hA2ErvZYezc+2mCaW+fc3UEHetDFsaFwhErQ3iJi0cWxYVmmEpYj0Gx1hMKiB10cKysKFVmJgtHqCYVFD7kYVonFqUTt/dnuC4VFD7r+sX85x4+NxRNUcHd6A6Gw6GE+wsaT13usvbv9oVBY9KCLY5OpNJWEvbv9MVjWzjl3d9CBHnRxbEpVqaTUNPSHU6Gw6EEXx6qZLBV8dQ3GM7C2gmBtB3qYj7CZXJ5jR9MZrDemc+7uoGM0sbGOj7D54uGzplLTYW4/fFdr0/XMv5dQ1euQc3yELWsaxxZubiFbLECmkBMi6LnTygcsK4hlXdQc0X+DFfwCEYG0fHEN3JoAAAAASUVORK5CYII=" InformativeScreenshot="40ecb2e2d759e58377e3be521627423e.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField 科目'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_9" Text="testttt" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="41, 298, 407, 21" ElementType="InputBox" FriendlyName="'CTextField 科目'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[1,2]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[1,2]' /&gt;" Guid="2e101cae-dea1-4ec2-a861-3b5e026e0b95" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZsAAAAZCAYAAADnl4OfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH0SURBVHhe7d3LbxJhGIVx//+9lyrSai+m9wsFdKOjJro2QgttRVoL9JZUHCxQFkdOgy78jAkzmd3zS85q3v2TfJu51/jeE2OMMZbliA1jjLHM9yc25XJZjx7P6P6Dh4wxxliquSfuShCb/Oyconcf9KlSV3X/kDHGGEs0d+Tt+4/K5fJhbGZyT/W5Wle7c6FuN2aMMcYSzR2p7NXuuhLE5kl+VrWDhuL4p0ajEWOMMZZo7oh74q4EsfEz2lGjqX5/KAAAknJH3BN3JYzNs+c6/HKsweB2cg4AwPTcEffEXQliMze/QGwAAKn9jo27EsRmfnFBR80TYgMASMUdcU/clSA2iy+W1GieEhsAQCruiHty15W/Y7O0vKKvxy1iAwBIxR1xT9wVYgMAyASxAQBkjtgAADL339gsr6zq5LRNbAAAqbgj7om7EsZmbV3fWh1iAwBIxR1xT9yVIDarG5vjj+caDkeTcwAApueOuCfuShCbja1NtTqXxAYAkIo74p64K0FstrZ31D6/0vCW2AAAknNH3BN3JYxNYVdnl1e66Q8m5wAATM8dObsYx2bclSA2xXJJlf2arruxejcDxhhjLNGuf8Sq1uoqlP7xW+goilR8+Uo7paK2iwXGGGMs8dyT19GbMDaMMcZYViM2jDHGMl5PvwByD5opexJdngAAAABJRU5ErkJggg==" InformativeScreenshot="46f93adc4caa4c98318be813b04cdde0.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_10" Text="40" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="25, 321, 23, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,0]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,0]' /&gt;" Guid="a452f481-2a90-43ef-8163-7eb989fa4632" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGnSURBVEhL7dbLSwJRGMZh//9l0MUytbyEWl5Ta1NjQW2LNDXN1LwrmGleF2/nneRIJIHNqVUHPj4YD78HZuOYWoMhOGuJGxReBitP2WRa+nzZKMGWzbK7EovH49jaNmN9Y1PZsMcuIW6JWW12aBdXuE1mkUrnDA87ictrWCxWHWNfYmbLLu5SWdTqLfR6fcPDTvI+o3eJcUtsx2pD5qGAfv8Ns9nM8LDDHrvEuD+9xnyhiNFoAhWHHfbY/fIarXv7yD2WMB5P59eNHXbYY1fHxJaY3eH8FYxdYtwSc7icyBfLSjH22CXGLTHXgRuFYkUpxp7eFRi3xNweL55KVaUYe+wS4/7HVj7fYh6vD+VKTSnGHrvEuBfY4RGeq3WlGHvs6pjYEvP5A+LHJiaT2fy6scMOe+wS45aYPxhAtd5WirHHLjFuiQVDYdSaHUymijDRYY9dYtwLLHKMRruD4Wg8v27ssNNoCUx0dUxsiUXjMSTTGXTFH99gODY83dc+UpksIrGPzwL2JaZpGqInpwjHoghFI0qGvTPtXMfYl9hPv65WmT/EBngHxIXDa6BdFhcAAAAASUVORK5CYII=" InformativeScreenshot="a93692713f7d7b3b04f244057db7824b.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_11" Text="61320002" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="49, 321, 127, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,3]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,3]' /&gt;" Guid="40ea239d-e526-48e5-995d-d00b166a36e5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAZCAYAAAASYJ1DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM7SURBVGhD7ZtdTxpBGIXnZzXpXf+fqZr6UUXEKlIRVxAQTBNFaW1jLZFWFBT5EBcURUEQWNCczjsCaRO1XXs16ZzkycEwMhfvw84SkR0zhi6pck3xH8O6D5QMChYIBMSDf5FhaHhEISGjY2/RnT81m5iw4nX/gJCB+jn09fUhtn+okIjobgLr4c+wWKxCBuukDWzMMoFyvSVkuORthvOqgWDkAP2DA6hUqgqJyBeK2N2L4y2fP8lAzSzWSdRbt0IG4/bOFFWjjeBOCoNvhtButxUSUa3eIH6QwjifP8lAzejy0GjdIX/dNE3NuEUgmsYgP39U5EqjYSCZyojjoXdMTE69EzLolUaPbKmKVy9fPAmtIRlWuAzDo0oG2dJstnB4lIWVz1/IwJtNTc+Iy32mVO8Ry52Lga/G4g9Cz9Eaum8gGUbGxjtbqMiSrgw2Pn+SgZpN2+24vGkhpl/99s5/jK4M26k8zq4NIcMov/lQkSskQzJzjGn7vQzUzO5wIHfVwOZhXgz5qfwqQ3g/h8PzGyGDxWbrrFCRJSRDKnMCu2NWyEDNHHNOHJVu8CGWNSUDrd89vRafJmxTSgbZQjKkszpm+fxJBmohw0GxBh8fqhkZaH1ELyMY5TLw80ZFrigZVHp5VIZooQItkvwrGbrQ+k/pEj8mkuLmQ0WuPCjDnHPelAyj3hCm177Bs5MWMvgjCcw43ndWqMgSkuH4JA+aP8lAzZyuBVMyzIa/CxH8ezrCXIbl7TjsTiWDbCEZcnoBc3z+QgbezKUtYqdQ7snwJ2jdSuJM8DF9Ad/WLn+h+c4WKrLEMNpchjPM8/mTDNRMc7sR1a/Eu50u/+P+8KN0j4euDBvJIjybUThdWmcLFVlCMuiFc2juexmomduzhEi2KP5qOb+VwNyX/Ueh50kG74+cYDV+AldoC65Fd2cLFVlitNrIn12A5k8yUDOP14dQZE/IoG1sm4JEWFz/igX3UmcLFVlSbzRxWuQy8PkLGXgz33IAC0seIcOi12Ma+l1N01CrNxUScXVdRSyegJfPn2TwB5bB1kIh8QPJQP0cPH6vQkL8wRWshtbEDEPcA/XtaEUP9X8Tig41/ATnKd9vuiv0cgAAAABJRU5ErkJggg==" InformativeScreenshot="497504e2713563bd0260ad366e073ab8.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_12" Text="100" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="177, 321, 87, 21" ElementType="InputBox" FriendlyName="'TextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/txt[2,19]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/txt[2,19]' /&gt;" Guid="99e2246f-00cb-4984-a4ae-7f1b5b4fbce6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAZCAYAAABeplL+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG1SURBVGhD7dm5TwJhEAXw+f97bwQVj+CJIKCNrppobQQBDwTlUCBBXBSQYuR9C8kUdvu51bzkZfYlW/2y3VLpo8faYKrYAZYymYx5wJ1fXOCZ2TmtpcJT+lIoFDYjHFlh5+KKb7JFzuUftD4Lx/PLa5a+tBBaNgP3NlfkeqPJ3a6r9Vk4Zu8KxnXqS0vhiBm4hfsSu+4Xj0Yjrc/CEZ7Sl/B5Tz/zx1KZ+/0ha/wHjvCUvhReXfPG+D48VXgw+Jm8rvETOMJT+tJKdN0MXMW2lym29KXohjdwH8svim0pcISn9KWNrU0zzC1XFdtS4AhP6UubsW0zcJ8rNcW2FDjCU/oq9j9FsQOMYgeYP7Fj2ztm4L5U64ptKXCEp/Sl2O6eN8b3tdZQbEuBIzylL+3sH5iB+1p75+FwNHld4ydwhKf0pf24N3BrjZZiWwoc4Sl9KX6YMAO3/t7m4Y9i2wgc4Sl9KZ488sb4vrXa/N0fTF7X+Akc35pjbOFLybT32yaVSXM2X+BO1+Xe90Drs51Pl3OFIktfOnXOzHAch1PHJ5xIp/gwldRaKDylr/5dD7CKHVh7/AtQsrOp6KWVDAAAAABJRU5ErkJggg==" InformativeScreenshot="a936a286e7c9a7a0707eed0b5d4c83e4.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_13" Text="v7" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="265, 321, 23, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,30]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,30]' /&gt;" Guid="ff3c8ef3-8ef8-4ba4-8267-0f5c6dd78a19" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAZCAYAAADAHFVeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVEhL7dZJTwJBEAXg+v93F5RVGAiLLCKgFxk10bMRBAQRUcCFxAUUkEPZr5keOXAx03Cyk8qbSjrfy1xgqE3Eappvw6UOqYeVlBUKBfmAss0tF6+tb2gbeMpHksfjtcvMkzO+KNW4XKk7HjjHp+fsds98r8/PtOX22GWX5Rp3e8/8/j5wPHBKV1V2WT6S3F6fXVa9bvJg8MnT6dTxwIG3bflIwuup12w0WzwaTVjHgQNv3idfYGe2iKzf3PF4/G1dd3bgwIOrfAoEQ3Lxi1xGGVzlU9Aw5BI0QtxotbWWwYOrfDIiEbkYkTA3Ww9ay+BJ1/IpEo3JJSzy9q6jtQweXOX/l/35LCyLxuJyQbYfulrL4M37FEvszhaR952e1jJ4cJVPiWRKLnGR950nnkym1nVnBw48uMqnZDotl2Q6xZ3ei9YyeHCVT+nMnlzwq9996vPkW1OZcOApH0mZ7L5d9vjS56/R2Lru7MB5fBZllo+k/fzvZ0GpUuVX8cc3/Bo7ntePAZerNc5afq6QZyqapl2WOzjkvXyOM7msloF3ZBalb4qe1X5doUTNogv6Zsg/mSKnLIYxUIgAAAAASUVORK5CYII=" InformativeScreenshot="521397480643302e7fb2d434fa85a3b6.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_14" Text="cost center" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="289, 321, 87, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,33]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,33]' /&gt;" Guid="9767eb47-8974-4ad1-b91a-754a630f5d7e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFsAAAAZCAYAAABeplL+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMiSURBVGhD7dpbTxpRFAXg87Oa9K3/z1RNvSNiEamAwAgIpomitLaxlkgLCoJcREDAKyBXzerZR8aAUdux0aezkpWN4cgkXyY7grBDxqA2eVGTfcEy9YHEfvkyr9crHvwP9sjomOwDHZ+cgOpLk01P6/F+cEhg03xOBwYGENmLy/Y0FI5hPfANOp1eYOtnDGCTumlc1NsC+4xPLS1XW/AF9zE4PITLy6psT/OFEsK7UUxwX8KmyXT6GdTb1wK7dX2jqdVWB76dJIY/jKDT6cj2tFq9QnQ/iSnuS9g0Gd3ejfYN8pWm5tZa1/CGUhjm+0mmP41GC4lkWqyPuzUyM/tRYOcuG3fNnFbx7u2bJ0tnCHuFY4+OS+z7aTbbiB9koOe+AptPNmucE+sgfVq/ayRbFqCrkeiDpefoDO1twh6bnOpeQkaNim3gvoRNkxlNJpxdtRHJnffduY9Vxd5O5lGstAT2OF/+Mv0h7ET6EEbTLTZNZjKbkT1vYDOeF4hPpRc7sJdFvHwlsHUGQ/eEjBrCTqaPYDLPC2yazLxgwcHpFT5HMpqw6Xz4uCL+GjHMSuz7IexUJod57kvYNAX2fqkGN0fTgk3ng7kL+EIcm+8jmf5I7FfMo9ihwiXswcQ/Yaul819Tp3yNJMTyl+nPg9gLFqsm7HGXH8a1n1B2UgLbE4xhzvype0JGDWEfHuVBvoRNk1lsi5qw5wO/BLRnN4cAx17ejsJkkdj3Q9jZXAEL3Fdg88lsdgd2Chd32H8rnVuJFUW/pE7g3grzF7J2LyGjpsXfKGZzRVi5L2HTZHanEyH+hobuVloPU57Ao1XXh4q9kShB2QzBYrN3LyGjhrBzhTLszltsmsypLCGYKYlP/axbMSx833u09Dxhu35nRVejR7D5t2BzOLuXkFHTaneQL56AfAmbJlNcbviDuwLbvrGtqQTtWP+BRedS9xIyauqNJo5LHJv7Cmw+mXvZi8UlRWA7XIrm0u86FQW1elO2p+eVKiLRGFzcl7A93mWwNb9f/EDYNJ9TxeOSfaAe3wpW/WvCyM+d5X/XX7HyeyOv1hr+AMvz5rZ8dh8SAAAAAElFTkSuQmCC" InformativeScreenshot="12cb892c78b206b50db481d8fb3167dc.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'TextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_15" Text="ass2" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="481, 321, 127, 21" ElementType="InputBox" FriendlyName="'TextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/txt[2,57]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/txt[2,57]' /&gt;" Guid="c0618fd9-9ddf-441a-9444-afc628a6aaa7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAAZCAYAAAASYJ1DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHDSURBVGhD7ZpJT0JBEIT7/99dUERc0OCCLAJ60acmejaCgCACsrgliA8F5NBS84D0wV/wpiup1FQyt68yp6HqZ5/ValjHoJ6bstmsOSCXVwK8sLiktsTgLflTMBgyJbQeZufymm9zJc4XymqfG5wvrm5Y8qdAcM0U5F2+xO3OG/d6rtrnBufcfdFwn/Gn1dC6KcjiQ5Vd95vH47Ha5wZn8Jb8Cc/D7JmoVGs8GIxY5X+BM3hL/hTa2PTKJMuPdR4Of6fXVX4WOIO35E/hrW1TkDoGezQbg+RPWxGvICu1ho7BEoEzeEv+FNndMcVkraljsETgDN6SP+1E90xBPtVbOgZLBM7gLfnrGCyVjkE1l45BNde/Y4ju7ZuCbDTbOgZLBM7gLflT9ODQK5N8bnV0DJYInMFb8qf92JEpyOfWK49G4+l1lZ8FzuAt+VMs7hVkq/OuY7BE4Azekj/FE0lTkO3XDx796hhsEDiDt+RP8dSxVyb58v7BP4Ph9LrKzwLnl7fJGAR/SmW8b0/pbIZzhSJ3ey73f4Zqn7v75XK+WGLJn86cc1Mcx+H0ySknM2lOpFNqCwzekr/+jlbPrWNQT93nP1qwrGqb2ewMAAAAAElFTkSuQmCC" InformativeScreenshot="beca258a68d52784303575824b7fbaaf.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_16" Text="1000" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="609, 321, 39, 21" ElementType="InputBox" FriendlyName="'CTextField'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,73]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[2,73]' /&gt;" Guid="352b87b2-fd55-4d53-b043-7f5f301c7f51" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACsAAAAZCAYAAACo79dmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGnSURBVFhH7dhJT8JQEAfwfv+7C8oqlIZFKLtepGqiZyNIEazse4IIQguHsTP0Pb6ASR+Jk/wz/8McfsfXSh1JAhbjayV0JFaOAlsqlagg9vzCAyenZ8IEPcxHWJ/Pz7HawxO8VOpQrTVcDzruH5/B6937CHvh9XHsa7UOg+EEFoul60FH5U0Hj+MjrNcf4Fj93YDl8gd2u53rQQd6Lh0fYf2BIBXcTaMFm40FIgw60MN8hA2ErvZYezc+2mCaW+fc3UEHetDFsaFwhErQ3iJi0cWxYVmmEpYj0Gx1hMKiB10cKysKFVmJgtHqCYVFD7kYVonFqUTt/dnuC4VFD7r+sX85x4+NxRNUcHd6A6Gw6GE+wsaT13usvbv9oVBY9KCLY5OpNJWEvbv9MVjWzjl3d9CBHnRxbEpVqaTUNPSHU6Gw6EEXx6qZLBV8dQ3GM7C2gmBtB3qYj7CZXJ5jR9MZrDemc+7uoGM0sbGOj7D54uGzplLTYW4/fFdr0/XMv5dQ1euQc3yELWsaxxZubiFbLECmkBMi6LnTygcsK4hlXdQc0X+DFfwCEYG0fHEN3JoAAAAASUVORK5CYII=" InformativeScreenshot="92719d0b89afe2407ebc04f2b0e6bd66.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField 科目'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_17" Text="sgtet222" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="41, 344, 407, 21" ElementType="InputBox" FriendlyName="'CTextField 科目'" FullSelectorArgument="&lt;sap id='usr/sub/1/ctxt[3,2]' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/sub/1/ctxt[3,2]' /&gt;" Guid="28680b58-175d-4864-b796-1967f1a898ac" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZsAAAAZCAYAAADnl4OfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH0SURBVHhe7d3LbxJhGIVx//+9lyrSai+m9wsFdKOjJro2QgttRVoL9JZUHCxQFkdOgy78jAkzmd3zS85q3v2TfJu51/jeE2OMMZbliA1jjLHM9yc25XJZjx7P6P6Dh4wxxliquSfuShCb/Oyconcf9KlSV3X/kDHGGEs0d+Tt+4/K5fJhbGZyT/W5Wle7c6FuN2aMMcYSzR2p7NXuuhLE5kl+VrWDhuL4p0ajEWOMMZZo7oh74q4EsfEz2lGjqX5/KAAAknJH3BN3JYzNs+c6/HKsweB2cg4AwPTcEffEXQliMze/QGwAAKn9jo27EsRmfnFBR80TYgMASMUdcU/clSA2iy+W1GieEhsAQCruiHty15W/Y7O0vKKvxy1iAwBIxR1xT9wVYgMAyASxAQBkjtgAADL339gsr6zq5LRNbAAAqbgj7om7EsZmbV3fWh1iAwBIxR1xT9yVIDarG5vjj+caDkeTcwAApueOuCfuShCbja1NtTqXxAYAkIo74p64K0FstrZ31D6/0vCW2AAAknNH3BN3JYxNYVdnl1e66Q8m5wAATM8dObsYx2bclSA2xXJJlf2arruxejcDxhhjLNGuf8Sq1uoqlP7xW+goilR8+Uo7paK2iwXGGGMs8dyT19GbMDaMMcZYViM2jDHGMl5PvwByD5opexJdngAAAABJRU5ErkJggg==" InformativeScreenshot="ae961db017c96fe3717d1526a5c9ec3c.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目' /&gt;" SearchSteps="Selector" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVFhHY/j//z/jQOJRB4w6YNQBA+8Ap5rV7E7Vqw8OCK5ZU8jgVL2GE8j4PwB4rXPtGsGBcgDIcmFIFNDfAXDLwQ7Y2K1s71i9+r9j9Soq4dVAS0CYsOVgB/zeJvL17WbF/9TAJ5dY/PevngZ1BGHLwQ74v1PkPzXw7RVq/wMKav7blS7C5gCsllPNAXdXqv73za35b1u8AFsUrAdaLojNchCm2AEgy71za//blSzE5vP1LnVrcVoOwhQ5ANXyVcgW/yXGchBmeL9BorSnO/Z/d2ckiTjqv19BI0WWgzCDVe4MTvuKZf/ty5eSjB0ql6MHO9hy5zrccY6OqVkQQX1OvOUgTC0HkOxzGKaWA4iOc3RMeXVcs2YmuZaD8GiLaNQBow4Y6Q74zwgA6ZMB6Xx2NTYAAAAASUVORK5CYII=" InformativeScreenshot="12e79a1630336ebc9ba18d91d3b9fa96.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='DS4(1)/110 輸入 BPM費用請款-外掛(SM): 新增 總帳科目項目'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
 </Activity>
